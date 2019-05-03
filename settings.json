@@ -1,0 +1,154 @@
+// Settings that overwrite default and user settings
+// 01.05.2019 by CHEF-KOCH
+// Version 1.0
+
+{
+    // Disable Telemetry + Extension Telemetry
+    // or use: https://github.com/VSCodium/vscodium
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "extension-leaderboard.enableAppInsights": false,
+
+    // Disable welcome screen on first startup
+    "workbench.welcome.enabled": false,
+
+    // Disable auto save files
+    "files.autoSave": "off",
+
+    // Default Tab size
+    "editor.tabSize": 4,
+
+    // Insert spaces when pressing Tab
+    "editor.insertSpaces": true,
+
+    // When enabled, will trim trailing whitespace when you save a file
+    "files.trimTrailingWhitespace": true,
+
+    // Controls whether the editor should render whitespace characters
+    "editor.renderWhitespace": "all",
+
+    // Extensions to be installed by the Extension Manager
+    "extension-manager.extensions": [
+        "eg2.tslint", // TypeScript linter
+        "ms-vscode.cpptools", // Cpp tools
+        "msjsdiag.debugger-for-chrome", // Debugger for Chrome
+        "robertohuertasm.vscode-icons" // Cool icons for files
+    ],
+
+    // Default end of line character
+    // Mac / Linus: \n
+    // Windows: \r\n
+    "files.eol": "auto",
+
+    // Glob patterns for excluding folders and files
+    "files.exclude": {
+        "**/*.build": true,
+        "**/*.git": true,
+        "**/*.err": true,
+        "**/*.rec": true,
+        "**/*.log": true,
+        "**/*.evt": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/buildfre.*": true,
+        "**/buildchk.*": true,
+        "**/.DS_Store": true
+    },
+
+    // Glob patterns for excluding files and folders in searches
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        ".build/**": true,
+        "out*/**": true,
+        "i18n/**": true,
+        "extensions/**/out/**": true,
+        "*.min.js": true
+    },
+
+    // Enable linter for TypeScript files
+    "tslint.enable": true,
+    "files.associations": {
+        "deque": "cpp",
+        "list": "cpp",
+        "vector": "cpp",
+        "xstring": "cpp"
+    },
+
+    // Show the status bar
+    "workbench.statusBar.visible": true,
+
+    // Disable status bar feedback indicator
+    "workbench.statusBar.feedback.visible": false,
+
+    // VS Code Icon theme
+    "workbench.iconTheme": "material-icon-theme",
+
+    // VS Code Color Theme
+    "workbench.colorTheme": "Dracula Soft",
+
+    // Global spell checker
+    "cSpell.language": "en",
+
+    // Disable breadcrumbs
+    "breadcrumbs.enabled": false,
+
+    // Render whitespaces
+    "editor.renderWhitespace": "all",
+
+    // Ensure we use 100 %
+    "window.zoomLevel": 0,
+
+    // By default I prefer word Wrap
+    "editor.wordWrap": "on",
+
+    // By default we are going to guess new file encodings
+    "files.autoGuessEncoding": true,
+
+    // My global user words
+    "cSpell.userWords": [
+        "Antialiasing",
+        "Denuvo",
+        "Googleing",
+        "Malvertising",
+        "Ryzen",
+        "Undervolting",
+        "Uninstallation",
+        "Vidia",
+        "admx",
+        "algolia",
+        "cosmetical",
+        "ethereum",
+        "gchq",
+        "gemfile",
+        "mailchimp",
+        "maximium",
+        "mkdir",
+        "Monero",
+        "prepending",
+        "proze",
+        "signup",
+        "silverlight",
+        "staticmanv",
+        "sysvol",
+        "unclickable",
+        "unencrypted",
+        "untrusted",
+        "upscri",
+        "wufoo"
+    ],
+}
+    "[bat]": {
+        "files.encoding": "cp437",
+        "files.autoGuessEncoding": false,
+        "editor.fontFamily": "Consolas, 'Courier New', monospace"
+    }
+    "[markdown]":  {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": false
+      }
+      "[powershell]": {
+        "files.encoding": "windows1252"
+    }
+}

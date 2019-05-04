@@ -1,0 +1,90 @@
+// Settings that overwrite default and user settings
+//
+// 01.05.2019 by CHEF-KOCH
+// Version 1.0
+//
+[
+    {
+        "key": "cmd+g",
+        "command": "editor.foldAll",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+h",
+        "command": "editor.unfoldAll",
+
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+y",
+        "command": "redo",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+t",
+        "command": "workbench.action.tasks.test"
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "-code-runner.runCustomCommand"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "-code-runner.runByLanguage"
+    },
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "shift+cmd+g",
+        "command": "workbench.view.scm"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.view.scm"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+g",
+        "command": "editor.action.previousMatchFindAction",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+g",
+        "command": "-editor.action.previousMatchFindAction",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+1",
+        "command": "-numberedBookmarks.jumpToBookmark1",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+2",
+        "command": "-numberedBookmarks.jumpToBookmark2",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+3",
+        "command": "-numberedBookmarks.jumpToBookmark3",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+a",
+        "command": "workbench.view.extension.postgres-explorer"
+    },
+    {
+        "key": "f9",
+        "command": "sortLines.sortLinesCaseInsensitive",
+        "when": "editorTextFocus"
+    }
+]

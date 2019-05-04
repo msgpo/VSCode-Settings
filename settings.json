@@ -1,13 +1,27 @@
 // Settings that overwrite default and user settings
+//
 // 01.05.2019 by CHEF-KOCH
-// Version 1.0
-
+// Version 1.1
+//
 {
     // Disable Telemetry + Extension Telemetry
     // or use: https://github.com/VSCodium/vscodium
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
     "extension-leaderboard.enableAppInsights": false,
+
+    // Fonts, MiniMap etc.
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "editor.fontWeight": "bold",
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.multiCursorModifier": "alt",
+    "editor.rulers": [
+        79, 99
+    ],
 
     // Disable welcome screen on first startup
     "workbench.welcome.enabled": false,
@@ -26,6 +40,9 @@
 
     // Controls whether the editor should render whitespace characters
     "editor.renderWhitespace": "all",
+
+    // Emmet
+    "emmet.excludeLanguages": ["markdown", "typescriptreact"],
 
     // Extensions to be installed by the Extension Manager
     "extension-manager.extensions": [
@@ -51,6 +68,10 @@
         "**/.svn": true,
         "**/.hg": true,
         "**/CVS": true,
+        "**/.ipynb_checkpoints": true,
+        "**/__pycache__": true,
+        "**/.hypothesis": true,
+        "**/.vscode": true,
         "**/buildfre.*": true,
         "**/buildchk.*": true,
         "**/.DS_Store": true
@@ -97,7 +118,7 @@
     // Render whitespaces
     "editor.renderWhitespace": "all",
 
-    // Ensure we use 100 %
+    // Ensure we use 100 % to avoid blurriness
     "window.zoomLevel": 0,
 
     // By default I prefer word Wrap
@@ -105,6 +126,15 @@
 
     // By default we are going to guess new file encodings
     "files.autoGuessEncoding": true,
+
+    // Github
+    "github.hosts": [
+        {
+            "host": "https://github.com",
+            "username": "oauth",
+            "token": "system"
+        }
+    ],
 
     // My global user words
     "cSpell.userWords": [
@@ -139,16 +169,47 @@
         "wufoo"
     ],
 }
+    // Language specific settings
+    "[python]": {
+        "editor.rulers": [
+            72,
+            79
+    },
+    "[css]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+    "[html]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
     "[bat]": {
         "files.encoding": "cp437",
         "files.autoGuessEncoding": false,
         "editor.fontFamily": "Consolas, 'Courier New', monospace"
-    }
+    },
     "[markdown]":  {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
         "editor.wordWrap": "on",
         "editor.quickSuggestions": false
-      }
+      },
       "[powershell]": {
         "files.encoding": "windows1252"
-    }
+    },
+    // Plugins/Extensions
+    //"docker.showExplorer": false,
+    "material-icon-theme.showUpdateMessage": false,
+    "extensions.showRecommendationsOnlyOnDemand": true,
+    "vim.mouseSelectionGoesIntoVisualMode": true,
+    "markdown-toc.depthFrom": 2,
+    "markdown-toc.depthTo": 3,
+    "markdown-toc.updateOnSave": true,
+    "markdownlint.config": {
+    // "MD001": false,
+    // "MD007": false,
+    },
 }

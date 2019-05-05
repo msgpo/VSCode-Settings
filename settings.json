@@ -1,7 +1,7 @@
 // Settings that overwrite default and user settings
 //
-// 01.05.2019 by CHEF-KOCH
-// Version 1.1
+// 05.05.2019 by CHEF-KOCH
+// Version 1.2
 //
 {
     // Disable Telemetry + Extension Telemetry
@@ -11,23 +11,50 @@
     "extension-leaderboard.enableAppInsights": false,
 
     // Fonts, MiniMap etc.
-    "editor.fontFamily": "Fira Code",
+    // https://github.com/tonsky/FiraCode
+    "editor.fontFamily": "Fira Code", //“editor.fontFamily”: “Consolas” or "editor.fontFamily": "Ubuntu Mono"
     "editor.fontLigatures": true,
-    "editor.fontSize": 13,
-    "editor.fontWeight": "bold",
+    "editor.fontSize": 14,
+    //"editor.lineHeight": 23,
+    //"window.newWindowDimensions": "maximized",
+    //"window.openFoldersInNewWindow": "off",
+    //workbench.activityBar.visible": true,
+    //"window.restoreWindows": "none"
+    "font_face": "MS Gothic",
+    "editor.fontWeight": "500",
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
     "editor.minimap.renderCharacters": false,
     "editor.multiCursorModifier": "alt",
+
+    // Editor Rulers
     "editor.rulers": [
         79, 99
     ],
+
+    // Font weights
+    //"editor.fontWeight": "300" // Light
+    //"editor.fontWeight": "400" // Regular
+    //"editor.fontWeight": "500" // Medium
+    //"editor.fontWeight": "600" // Bold
+
+    //"font_options":
+    "workbench.fontAliasing": "antialiased", //antialiased, default or none
+    //[
+    //    "gray_antialias"
+    //],
 
     // Disable welcome screen on first startup
     "workbench.welcome.enabled": false,
 
     // Disable auto save files
     "files.autoSave": "off",
+
+    // Format on paste
+    "editor.formatOnPaste": true,
+
+    // Disable indentation guessing
+    "editor.detectIndentation": false,
 
     // Default Tab size
     "editor.tabSize": 4,
@@ -37,9 +64,6 @@
 
     // When enabled, will trim trailing whitespace when you save a file
     "files.trimTrailingWhitespace": true,
-
-    // Controls whether the editor should render whitespace characters
-    "editor.renderWhitespace": "all",
 
     // Emmet
     "emmet.excludeLanguages": ["markdown", "typescriptreact"],
@@ -121,11 +145,23 @@
     // Ensure we use 100 % to avoid blurriness
     "window.zoomLevel": 0,
 
-    // By default I prefer word Wrap
+    // By default I prefer word wrap
     "editor.wordWrap": "on",
 
     // By default we are going to guess new file encodings
     "files.autoGuessEncoding": true,
+
+    // Indent <head> and <body> sections
+    "html.format.indentInnerHtml": true,
+
+    // Preserve new lines
+    "html.format.preserveNewLines": true,
+
+    // HTML formatter option (default)
+    "html.format.unformatted": "code",
+
+    // Default wrap line length
+    "html.format.wrapLineLength": 0,
 
     // Github
     "github.hosts": [
@@ -193,12 +229,17 @@
     },
     "[markdown]":  {
         "editor.tabSize": 2,
-        "editor.insertSpaces": true
+        "editor.insertSpaces": true,
         "editor.wordWrap": "on",
         "editor.quickSuggestions": false
       },
       "[powershell]": {
         "files.encoding": "windows1252"
+    },
+    "[reg]": {
+        "editor.tabSize": 2,
+        "files.encoding": "utf16le"
+        "editor.formatOnSave": true
     },
     // Plugins/Extensions
     //"docker.showExplorer": false,

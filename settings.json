@@ -1,7 +1,7 @@
 // Settings that overwrite default and user settings
 //
-// 05.05.2019 by CHEF-KOCH
-// Version 1.2
+// 05.08.2019 by CHEF-KOCH
+// Version 1.3
 //
 {
     // Disable Telemetry + Extension Telemetry
@@ -14,7 +14,7 @@
     // https://github.com/tonsky/FiraCode
     "editor.fontFamily": "Fira Code", //“editor.fontFamily”: “Consolas” or "editor.fontFamily": "Ubuntu Mono"
     "editor.fontLigatures": true,
-    "editor.fontSize": 14,
+    "editor.fontSize": 13,
     //"editor.lineHeight": 23,
     //"window.newWindowDimensions": "maximized",
     //"window.openFoldersInNewWindow": "off",
@@ -139,7 +139,7 @@
     // Disable breadcrumbs
     "breadcrumbs.enabled": false,
 
-    // Render whitespaces
+    // Render whitespace
     "editor.renderWhitespace": "all",
 
     // Ensure we use 100 % to avoid blurriness
@@ -147,6 +147,9 @@
 
     // By default I prefer word wrap
     "editor.wordWrap": "on",
+
+    // Default encoding for new files
+    "files.encoding": "utf8",
 
     // By default we are going to guess new file encodings
     "files.autoGuessEncoding": true,
@@ -172,39 +175,6 @@
         }
     ],
 
-    // My global user words
-    "cSpell.userWords": [
-        "Antialiasing",
-        "Denuvo",
-        "Googleing",
-        "Malvertising",
-        "Ryzen",
-        "Undervolting",
-        "Uninstallation",
-        "Vidia",
-        "admx",
-        "algolia",
-        "cosmetical",
-        "ethereum",
-        "gchq",
-        "gemfile",
-        "mailchimp",
-        "maximium",
-        "mkdir",
-        "Monero",
-        "prepending",
-        "proze",
-        "signup",
-        "silverlight",
-        "staticmanv",
-        "sysvol",
-        "unclickable",
-        "unencrypted",
-        "untrusted",
-        "upscri",
-        "wufoo"
-    ],
-}
     // Language specific settings
     "[python]": {
         "editor.rulers": [
@@ -230,10 +200,11 @@
     "[markdown]":  {
         "editor.tabSize": 2,
         "editor.insertSpaces": true,
+        "files.encoding": "utf8"
         "editor.wordWrap": "on",
         "editor.quickSuggestions": false
-      },
-      "[powershell]": {
+    },
+    "[powershell]": {
         "files.encoding": "windows1252"
     },
     "[reg]": {
@@ -241,7 +212,7 @@
         "files.encoding": "utf16le"
         "editor.formatOnSave": true
     },
-    // Plugins/Extensions
+    // Extensions specific
     //"docker.showExplorer": false,
     "material-icon-theme.showUpdateMessage": false,
     "extensions.showRecommendationsOnlyOnDemand": true,

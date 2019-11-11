@@ -31,3 +31,7 @@ If you're not concerned about syncing, you can just copy the files `keybindings.
 * [Backup and Synchronize VSCode Settings with a GitHub Gist (mikefrobbins.com)](https://mikefrobbins.com/2019/03/21/backup-and-synchronize-vscode-settings-with-a-github-gist/#comment-39448)
 * [VScode tips and tricks (github.com)](https://github.com/Microsoft/vscode-tips-and-tricks)
 * [VS Code Default Settings](https://gist.github.com/richban/151d3e80b246d74b60d5da16604a8c3e)
+
+
+# New Repo!
+* [CHEF-KOCH's Visual Studio Code Settings](https://gist.github.com/CHEF-KOCH/b18b44e5ef6a2c5776e1dc72f14e6ea0) - [Requires: Settings Syn](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
